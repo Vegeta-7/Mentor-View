@@ -11,7 +11,7 @@ const URL = process.env.MONGO_URL;
 const PORT = process.env.PORT || 3000; 
 
 app.use(cors({
-    origin: 'http://localhost:5173', // Replace with your frontend origin
+    origin: ['http://localhost:5173', 'https://mentor-view.vercel.app/'], // Replace with your frontend origin
     methods: ['GET', 'POST', 'DELETE', 'PUT'], // Allowed methods (adjust as needed)
 }));
 
