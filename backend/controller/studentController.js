@@ -1,6 +1,6 @@
 const Student = require('../modals/StudentSchema.js');
 const asyncHandler = require('express-async-handler');
-const nodemailer = require('nodemailer');
+// const nodemailer = require('nodemailer');
 
 
 
