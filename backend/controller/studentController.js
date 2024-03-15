@@ -1,5 +1,6 @@
 const Student = require('../modals/StudentSchema.js');
 const asyncHandler = require('express-async-handler');
+const nodemailer = require('nodemailer');
 
 
 
@@ -26,6 +27,14 @@ const addStudent = asyncHandler(async (req, res) => {
         throw new Error('Invalid credentials');
     }
 })
+
+// let transporter=nodemailer.createTransport()({
+//     service:"gmail",
+//     auth:{
+//         user:process.env.AUTH_EMAIL,
+//         pass:process.env.AUTH_PASS
+//     }
+// })
 
 const getStudents = async (req, res) => {
     try {
