@@ -7,7 +7,7 @@ const Forms = () => {
   const location = useLocation();
   const student = location.state?.Student;
   const mentorId = location.state?.id;
-  const API_URL = "http://localhost:3000/api/";
+  const API_URL = "https://mentor-view-2.onrender.com/api/";
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({

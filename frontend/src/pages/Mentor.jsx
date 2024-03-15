@@ -4,7 +4,7 @@ import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 
 function Mentor() {
-  const API_URL = "http://localhost:3000/api/";
+  const API_URL = "https://mentor-view-2.onrender.com/api/";
 
   const [mentor, setMentor] = useState();
   const [students, setStudents] = useState();
