@@ -10,10 +10,7 @@ const app = express()
 const URL = process.env.MONGO_URL;
 const PORT = process.env.PORT || 3000; 
 
-app.use(cors({
-    origin: 'https://mentor-view.vercel.app/', // Replace with your frontend origin
-    methods: ['GET', 'POST', 'DELETE', 'PUT'], // Allowed methods (adjust as needed)
-}));
+app.use(cors());
 
 // to access the req.body(we set middleware here);
 app.use(express.json());
